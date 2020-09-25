@@ -1,10 +1,12 @@
+import inventoryStore from './components/inventoryStore.js';
+
 new Vue({
 	el: "#app",
 	components: {
 		Flashcard
 	},
 	data: {
-		message: "hello"
+		message: `The score is ${inventoryStore.getData().score}.`
 	},
 	template: `
 		<div>
